@@ -39,10 +39,21 @@ body {
   input,
   textarea,
   select {
-    margin: 10px 0 0 0;
     width: 100%;
+    margin: 10px 0 0 0;
     min-height: 2em;
   }
+
+  /* -------------------------------The following input styles reverted to unset-------------------------------- */
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    width: unset;
+    min-height: unset;
+    margin: 1em;
+  }
+
+/* -------------------------------------------------------------------------------------------------------------- */
   
   input, textarea {
     background-color: #0a0a23;
